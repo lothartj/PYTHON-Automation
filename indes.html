@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      td, th {
+        border: 1px solid black;
+        padding: 8px;
+      }
+      th {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <table id="contacts">
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>123-456-7890</td>
+        <td>
+          <button onclick="updateContact(this)">Update</button>
+          <button onclick="removeContact(this)">Remove</button>
+        </td>
+      </tr>
+      <tr>
+        <td>Bob</td>
+        <td>234-567-8901</td>
+        <td>
+          <button onclick="updateContact(this)">Update</button>
+          <button onclick="removeContact(this)">Remove</button>
+        </td>
+      </tr>
+      <!-- Add more rows for additional contacts -->
+    </table>
+    <br>
+    <form onsubmit="addContact(); return false;">
+      <label>Name:</label>
+      <input type="text" id="name">
+      <label>Phone:</label>
+      <input type="text" id="phone">
+      <button type="submit">Add Contact</button>
+    </form>
+    <script>
+      function addContact() {
+        // Get the values of the name and phone inputs
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+
+        // Create a new row for the contact
+        var row = document.createElement("tr");
+        var nameCell = document.createElement("td");
+        nameCell.innerHTML = name;
+        var phoneCell = document.createElement("td");
+        phoneCell.innerHTML = phone;
+        var actionCell = document.createElement("td");
+        actionCell.innerHTML = `
+          <button onclick="updateContact(this)">Update</button>
+          <button onclick="removeContact(this)">Remove</button>
+        `;
+        row.appendChild(nameCell);
+        row.appendChild(phoneCell);
+        row.appendChild(actionCell);
+
+        // Add the new row to the table
+        var table = document.getElementById("contacts");
+        table.appendChild(row);
+
+        // Clear the name and phone inputs
+        document.getElementById("name").value = "";
+        document.getElementById("phone").value = "";
+      }
+
+      function updateContact(button) {
+        // Get the row containing the contact
+        var row = button.parentNode.parentNode;
+
+        // Get the name and phone cells
+        var nameCell = row.firstChild;
+        var phoneCell =

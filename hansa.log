@@ -1,0 +1,20 @@
+2022-12-13 16:53:34 *** running with new mail receiving and parsing ***
+2022-12-13 16:53:34 *** using a freelist to keep track of free space ***
+2022-12-13 16:53:35 Database ID changed from: 00000000000000000000000000000000 to: 720BBB96BF3B64D53F949C11CD7CE193
+2022-12-13 16:53:35 failed to create file hob\dsdata.dat C:\Users\lothart\Desktop\UAT is current directory
+2022-12-13 16:53:35 windows error: The operation completed successfully.
+
+2022-12-13 16:53:46 8.5 2022-02-02 (build 85420830)
+2022-12-13 16:53:49 Close database 
+2022-12-13 16:53:55 *** running with new mail receiving and parsing ***
+2022-12-13 16:53:55 *** Using Clock Replacement ***
+2022-12-13 16:53:55 *** using a freelist to keep track of free space ***
+2022-12-13 16:53:55 Database ID is: 720BBB96BF3B64D53F949C11CD7CE193
+2022-12-13 16:53:55 8.5 2022-02-02 (build 85420830)
+2022-12-13 16:54:02 Close database 
+2022-12-13 16:55:33 *** running with new mail receiving and parsing ***
+2022-12-13 16:55:33 *** Using Clock Replacement ***
+2022-12-13 16:55:33 *** using a freelist to keep track of free space ***
+2022-12-13 16:55:33 Database ID is: 720BBB96BF3B64D53F949C11CD7CE193
+2022-12-13 16:55:34 8.5 2022-02-02 (build 85420830)
+2022-12-13 16:55:40 Close database 
